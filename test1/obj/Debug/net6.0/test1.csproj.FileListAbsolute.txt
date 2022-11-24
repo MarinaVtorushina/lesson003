@@ -3,3 +3,13 @@ D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\test
 D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\test1.AssemblyInfoInputs.cache
 D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\test1.AssemblyInfo.cs
 D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\test1.csproj.CoreCompileInputs.cache
+D:\Аналитик\разработчик\lesson003\test1\bin\Debug\net6.0\test1.exe
+D:\Аналитик\разработчик\lesson003\test1\bin\Debug\net6.0\test1.deps.json
+D:\Аналитик\разработчик\lesson003\test1\bin\Debug\net6.0\test1.runtimeconfig.json
+D:\Аналитик\разработчик\lesson003\test1\bin\Debug\net6.0\test1.dll
+D:\Аналитик\разработчик\lesson003\test1\bin\Debug\net6.0\test1.pdb
+D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\test1.dll
+D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\refint\test1.dll
+D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\test1.pdb
+D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\test1.genruntimeconfig.cache
+D:\Аналитик\разработчик\lesson003\test1\obj\Debug\net6.0\ref\test1.dll

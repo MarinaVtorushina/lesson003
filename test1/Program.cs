@@ -1,27 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
-Void ZadachaReplacetext()
+﻿//Замена текста
 
-{   
-        string text = "Дуб — дерево."
-        + "Оптика — раздел физики."
-        + "Старший брат — мой учитель."
-        + "Старший брат мой - учитель.";
+ZadachaReplacetext();
 
-        string Replace (string text, char oldValue, char newValue)
-    {
-        string result = String.Empty;
+void ZadachaReplacetext()
+{
+  string text = "Дуб — дерево."
+                + "Оптика — раздел физики."
+                + "Старший брат — мой учитель."
+                + "Старший брат мой - учитель.";
 
-        int lenght = text.lenght;
-        for (int i = 0; i < lenght; i++)
-        {
-            if(text [i] ==oldValue) resalt = result + $"{newValue}";
-            else result = result + $"{text [i]}";
-        }
-        
-        return result;
-    }
 
-    string newText = Replace(text, ' ', '|');
-    Console.WriteLine(newText);
+  string newText = Replace(text, ' ', '|');
+  Console.WriteLine(newText);
 }
-Void ZadachaReplacetext();
+
+string Replace(string text, char oldValue, char newValue)
+{
+  string result = String.Empty;
+
+  int lenght = text.Length;
+  for (int i = 0; i < lenght; i++)
+  {
+    if (text[i] == oldValue)
+      result += $"{newValue}";
+    else
+      result += $"{text[i]}";
+  }
+
+  return result;
+}
