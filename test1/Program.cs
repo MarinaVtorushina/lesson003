@@ -66,27 +66,28 @@ void Zadacha18()
 {
   //Напишите программу, которая по заданному номеру четверти, показывает диапазон возможных координат точек в этой четверти (x и y).
 
-int x = Console.ReadLine(1, 4);
+Console.WriteLine ("Введите первое число: ");
+int x = Convert.ToInt32(Console.ReadLine());
 
-if (x = 1)
+if (x == 1)
 {
     Console.WriteLine("y > 0 && x > 0"); 
 }
-else if (x = 2)
+else if (x == 2)
 {
     Console.WriteLine("y > 0 && x < 0"); 
 }
-else if (x = 3)
+else if (x == 3)
 {
     Console.WriteLine("y < 0 && x < 0"); 
 }
-else if (x = 4)
+else if (x == 4)
 {
     Console.WriteLine("y < 0 && x > 0"); 
 }
 else 
 {
-    Console.WriteLine("Точки лежат на одной из плоскостей");
+    Console.WriteLine("Точки не лежат в одной из плоскостей");
 }
 
 }
@@ -97,9 +98,24 @@ void Zadacha21()
   // Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
 // A (3,6); B (2,1) -> 5,09 
 // A (7,-5); B (1,-1) -> 7,21
+Console.WriteLine ("Введите х1 число: ");
+int x1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите х2 число: ");
+int x2 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите у1 число: ");
+int y1 = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите у2 число: ");
+int y2 = Convert.ToInt32(Console.ReadLine());
+
+int k = x2 - x1;
+int m = y2 - y1;
+double lenght = Math.Sqrt(k * k + m * m);
+Console.WriteLine (lenght); 
+Console.WriteLine($"Длина {lenght}"); 
 
 }
 Zadacha21(); 
+
 void Zadacha22()
 {
 // Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел 
