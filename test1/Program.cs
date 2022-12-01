@@ -91,7 +91,6 @@ else
 }
 
 }
-Zadacha18(); 
 
 void Zadacha21()
 {
@@ -114,7 +113,6 @@ Console.WriteLine (lenght);
 Console.WriteLine($"Длина {lenght}"); 
 
 }
-Zadacha21(); 
 
 void Zadacha22()
 {
@@ -134,14 +132,30 @@ for (int i = 1; i <= number; i++)
 }
 
 }
-Zadacha22(); 
 
 void Zadacha19()
 {
 // Напишите программу, которая принимает 
 // на вход пятизначное число и проверяет, является ли 
 // оно палиндромом.
-
+int number = 23432;
+int current_number = number;
+int result = 0;
+while (current_number > 0)
+{
+    int digit = current_number % 10;
+    result = result * 10 + digit;
+    current_number /=10;
+    Console.WriteLine(result);
+}
+if (number == result)
+{
+    Console.WriteLine($"число {number} палиндром");
+}
+else
+{
+    Console.WriteLine($"число {number} не палиндром");
+}
 }
 Zadacha19();
 
@@ -149,6 +163,21 @@ void Zadacha211()
 {
 // Задача 21: Напишите программу, которая принимает 
 // на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
+Console.WriteLine ("Введите Координаты точки А (ах): ");
+int ax = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите Координаты точки А (аy): ");
+int ay = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите Координаты точки А (аy): ");
+int az = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите Координаты точки B (bх): ");
+int bx = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите Координаты точки B (by): ");
+int by = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine ("Введите Координаты точки B (bz): ");
+int bz = Convert.ToInt32(Console.ReadLine());
+double result = Math.Sqrt(Math.Pow(ax - bx, 2) + Math.Pow(ay - by, 2) + Math.Pow(az - bz, 2));
+Console.WriteLine (result); 
+
 }
 
 Zadacha211();
@@ -158,5 +187,13 @@ void Zadacha23()
 // Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
 // 3 -> 1, 4, 9. 
 // 5 -> 1, 8, 27, 64, 125
+
+int number = 7;
+int counter = 1;
+while (counter <= number)
+{
+	Console.WriteLine($"{counter}*{counter}*{counter}*= {counter * counter * counter}");
+	counter++;
+}
 }
 Zadacha23();
