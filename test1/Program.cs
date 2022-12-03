@@ -113,6 +113,8 @@ Console.WriteLine (lenght);
 Console.WriteLine($"Длина {lenght}"); 
 
 }
+Zadacha21();
+
 
 void Zadacha22()
 {
